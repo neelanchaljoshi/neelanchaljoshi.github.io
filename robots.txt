@@ -1,4 +1,4 @@
 User-agent: *
 Disallow:
 
-Sitemap: https://neelanchaljoshi.github.io/neelanchaljoshi/sitemap.xml
+Sitemap: https://neelanchaljoshi.github.io/sitemap.xml
