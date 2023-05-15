@@ -2,24 +2,27 @@
 layout: about
 title: about
 permalink: /
-subtitle: <a href='#'>Affiliations</a>. Address. Contacts. Moto. Etc.
+subtitle: <a href='https://www.mps.mpg.de/'>Max Planck Institute for Solar System Research</a>
 
 profile:
   align: right
   image: prof_pic.jpg
   image_circular: false # crops the image to make it circular
   address: >
-    <p>555 your office number</p>
-    <p>123 your address street</p>
-    <p>Your City, State 12345</p>
+    <p>BT1.E1.103</p>
+    <p>Max Planck Institute for Solar System Research</p>
+    <p>Justus-von-Liebig-Weg 3</p>
+    <p>Goettingen, Niedersachsen 37075</p>
 
-news: true  # includes a list of news items
-selected_papers: true # includes a list of papers marked as "selected={true}"
+news: false  # includes a list of news items
+selected_papers: false # includes a list of papers marked as "selected={true}"
 social: true  # includes social icons at the bottom of the page
 ---
 
-Write your biography here. Tell the world about yourself. Link to your favorite [subreddit](http://reddit.com). You can put a picture in, too. The code is already in, just name your picture `prof_pic.jpg` and put it in the `img/` folder.
+I am a PhD student at the MPI for Solar System Research in Goettingen. Before this, I did my Bachelors in Electrical and Electronics Engineering with a Masters in Physics from [BITS Pilani](https://www.bits-pilani.ac.in/), India. Being an Army brat, I have never lived in a place for more than two years. Still, my current "home base" is Dehradun, a small city on the foothills of the Himalayas.
 
-Put your address / P.O. box / other info right below your picture. You can also disable any these elements by editing `profile` property of the YAML header of your `_pages/about.md`. Edit `_bibliography/papers.bib` and Jekyll will render your [publications page](/al-folio/publications/) automatically.
+I am interested in studying the newly discovered inertial modes of oscillations in the sun. Inertial modes are low-frequency large scale oscillations that allow us to study porperties deep in the solar interior. More specifically, I am using a method called Local Correlation Tracking to measure flows on the surface of the sun, and looking for signatures of these inertial modes in the flow data. Additionally I am also interested in machine learning and big data applications in astronomy. Astronomy has seen an unprecedented amount of data being generated in the last decade and this allows machine learning to solve some very challenging problems in the field.
 
-Link to your social media connections, too. This theme is set up to use [Font Awesome icons](http://fortawesome.github.io/Font-Awesome/) and [Academicons](https://jpswalsh.github.io/academicons/), like the ones below. Add your Facebook, Twitter, LinkedIn, Google Scholar, or just disable all of them.
+When I am not busy scratching my head about science, you can find me playing some sport or the other, quizzing, or watching any movie/series I can get my hands on :) 
+
+This website is currently under construction. Your patience is much appreciated.
