@@ -1,12 +1,6 @@
 github_users:
-  - torvalds
-  - alshedivat
+  - neelanchaljoshi
 
 github_repos:
-  - alshedivat/al-folio
-  - twbs/bootstrap
-  - jekyll/jekyll
-  - jquery/jquery
-  - FortAwesome/Font-Awesome
-  - jpswalsh/academicons
-  - mathjax/MathJax
+  - neelanchaljoshi/neelanchaljoshi.github.io
+  - neelanchaljoshi/local_correlation_tracking
