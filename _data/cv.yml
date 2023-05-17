@@ -8,25 +8,24 @@
     - name: Languages
       value: English, Hindi, Sanskrit
 
-# - title: Education
-#   type: time_table
-#   contents:
-#     - title: PhD
-#       institution: University of Goettingen
-#       year: 
-#       description:
-#         - Description 1.
-#         - Description 2.
-#         - title: Description 3.
-#           contents:
-#             - Sub-description 1.
-#             - Sub-description 2.
-#     - title: Federal teaching diploma
-#       institution: Eidgenössische Technische Hochschule, Zurich, Switzerland
-#       year: 1900
-#       description:
-#         - Description 1.
-#         - Description 2.
+- title: Education
+  type: time_table
+  contents:
+    - title: PhD in Physics
+      institution: University of Goettingen, MPI for Solar System Research
+      year: 2022
+
+    - title: BE in Electrical and Electronics Engineering
+      institution: BITS Pilani
+      year: 2017
+      description:
+        - Thesis - Estimating structural and dynamical parameters for Red Giants using MCMC simulations
+
+    - title: MSc in Physics
+      institution: BITS Pilani
+      year: 2017
+      description:
+        - Thesis - Solar Magnetogram Generation using Deep Learning
 
 # - title: Experience
 #   type: time_table
