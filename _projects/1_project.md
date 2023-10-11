@@ -1,8 +1,8 @@
 ---
 layout: page
-title: project 1
-description: a project with a background image
-img: assets/img/12.jpg
+title: inertial modes
+description: detecting and characterizing inertial mode eigenfunctions
+img: assets/img/sun.jpg
 importance: 1
 category: work
 ---
