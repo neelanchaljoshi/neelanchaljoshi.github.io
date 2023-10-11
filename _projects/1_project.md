@@ -1,7 +1,7 @@
 ---
 layout: page
 title: inertial modes
-description: detecting and characterizing inertial mode eigenfunctions
+description: detecting inertial modes and characterizing the eigenfunctions
 img: assets/img/sun.jpg
 importance: 1
 category: work
