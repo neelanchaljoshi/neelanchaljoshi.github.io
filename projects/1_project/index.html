@@ -128,13 +128,13 @@ Inertial modes are low-frequency oscillations in the sun restored by the Corioli
 
 <p>This technique is well-known and widely used in Solar Physics and in engineering fields. Using this technique we can image convective and magnetic features on the solar surface and measure horizontal flows. Since 2010, we have high-cadence continuous white light images and magnetograms of the sun, which allow us to study large-scale low frequency modes of oscillations such as the inertials modes.</p>
 
-<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>---
-layout: page
-title: project
-description: a project with a background image
-img: /assets/img/12.jpg
----
-</code></pre></div></div>
+<!-- 
+    ---
+    layout: page
+    title: project
+    description: a project with a background image
+    img: /assets/img/12.jpg
+    ---
 
 <div class="row">
     <div class="col-sm mt-3 mt-md-0">
@@ -142,23 +142,50 @@ img: /assets/img/12.jpg
 
   <picture>
     
-    <source class="responsive-img-srcset" media="(max-width: 480px)" srcset="/assets/img/1-480.webp"></source>
-    <source class="responsive-img-srcset" media="(max-width: 800px)" srcset="/assets/img/1-800.webp"></source>
-    <source class="responsive-img-srcset" media="(max-width: 1400px)" srcset="/assets/img/1-1400.webp"></source>
+    <source 
+        class="responsive-img-srcset"
+        media="(max-width: 480px)" 
+        srcset="/assets/img/1-480.webp"
+      />
+    <source 
+        class="responsive-img-srcset"
+        media="(max-width: 800px)" 
+        srcset="/assets/img/1-800.webp"
+      />
+    <source 
+        class="responsive-img-srcset"
+        media="(max-width: 1400px)" 
+        srcset="/assets/img/1-1400.webp"
+      />
     
 
     <!-- Fallback to the original file -->
-    <img src="/assets/img/1.jpg" class="img-fluid rounded z-depth-1" width="auto" height="auto" title="example image" onerror="this.onerror=null; $('.responsive-img-srcset').remove();">
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>&lt;img 
+  src="/assets/img/1.jpg"
+  class="img-fluid rounded z-depth-1"  
+  width="auto" 
+  height="auto" 
+   
+   
+   
+   
+   
+  title="example image" 
+  
+  onerror="this.onerror=null; $('.responsive-img-srcset').remove();"
+/&gt;
+</code></pre></div></div>
 
-  </picture>
+<p>&lt;/picture&gt;</p>
 
-</figure>
+<p>&lt;/figure&gt;</p>
 
-    </div>
-    <div class="col-sm mt-3 mt-md-0">
-        <figure>
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>&lt;/div&gt;
+&lt;div class="col-sm mt-3 mt-md-0"&gt;
+    &lt;figure&gt;
+</code></pre></div></div>
 
-  <picture>
+<picture>
     
     <source class="responsive-img-srcset" media="(max-width: 480px)" srcset="/assets/img/3-480.webp"></source>
     <source class="responsive-img-srcset" media="(max-width: 800px)" srcset="/assets/img/3-800.webp"></source>
@@ -170,13 +197,14 @@ img: /assets/img/12.jpg
 
   </picture>
 
-</figure>
+<p>&lt;/figure&gt;</p>
 
-    </div>
-    <div class="col-sm mt-3 mt-md-0">
-        <figure>
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>&lt;/div&gt;
+&lt;div class="col-sm mt-3 mt-md-0"&gt;
+    &lt;figure&gt;
+</code></pre></div></div>
 
-  <picture>
+<picture>
     
     <source class="responsive-img-srcset" media="(max-width: 480px)" srcset="/assets/img/5-480.webp"></source>
     <source class="responsive-img-srcset" media="(max-width: 800px)" srcset="/assets/img/5-800.webp"></source>
@@ -188,10 +216,11 @@ img: /assets/img/12.jpg
 
   </picture>
 
-</figure>
+<p>&lt;/figure&gt;</p>
 
-    </div>
-</div>
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>&lt;/div&gt;
+</code></pre></div></div>
+<p>&lt;/div&gt;</p>
 <div class="caption">
     Caption photos easily. On the left, a road goes through a tunnel. Middle, leaves artistically fall in a hipster photoshoot. Right, in another hipster photoshoot, a lumberjack grasps a handful of pine needles.
 </div>
@@ -279,7 +308,7 @@ Here’s the code for the last row of images above:</p>
     <span class="nt">&lt;/div&gt;</span>
 <span class="nt">&lt;/div&gt;</span>
 </code></pre></div></div>
-
+<p>–&gt;</p>
 
           </article>
 
