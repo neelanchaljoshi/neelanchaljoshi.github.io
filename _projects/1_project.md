@@ -15,7 +15,7 @@ My PhD project involves looking for the signatures of these inertial modes using
 This technique is well-known and widely used in Solar Physics and in engineering fields. Using this technique we can image convective and magnetic features on the solar surface and measure horizontal flows. Since 2010, we have high-cadence continuous white light images and magnetograms of the sun, which allow us to study large-scale low frequency modes of oscillations such as the inertials modes.
 
 
-
+<!-- 
     ---
     layout: page
     title: project
@@ -80,4 +80,4 @@ Here's the code for the last row of images above:
     </div>
 </div>
 ```
-{% endraw %}
+{% endraw %} -->
