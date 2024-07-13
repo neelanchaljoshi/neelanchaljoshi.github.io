@@ -5,6 +5,13 @@
   <head>
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">    <!-- Metadata, OpenGraph and Schema.org -->
     
+    <!-- Website verification -->
+    <meta name="google-site-verification" content="">
+<!-- Avoid warning on Google Chrome
+        Error with Permissions-Policy header: Origin trial controlled feature not enabled: 'interest-cohort'.
+        see https://stackoverflow.com/a/75119417
+    -->
+    <meta http-equiv="Permissions-Policy" content="interest-cohort=()">
 
     <!-- Standard metadata -->
     <meta charset="utf-8">
@@ -126,7 +133,7 @@ Inertial modes are low-frequency oscillations in the sun restored by the Corioli
 
 <p>My PhD project involves looking for the signatures of these inertial modes using a flow measurement technique called Local Correlation Tracking. The basic concept involves imaging a feature of interest at two different times, assuming that the feature does not evolve in this time interval (lifetime of feature » time difference), and correlating these two images to find the distance by which this feature has moved. This in turn gives us the velocity of that feature.</p>
 
-<p>This technique is well-known and widely used in Solar Physics and in engineering fields. Using this technique we can image convective and magnetic features on the solar surface and measure horizontal flows. Since 2010, we have high-cadence continuous white light images and magnetograms of the sun, which allow us to study large-scale low frequency modes of oscillations such as the inertials modes.</p>
+<p>This technique is well-known and widely used in Solar Physics and in engineering fields. Using this technique we can image convective and magnetic features on the solar surface and measure horizontal flows. Since 2010, we have high-cadence continuous white light images and magnetograms of the sun, which allow us to study large-scale low frequency modes of oscillations such as the inertial modes.</p>
 
           </article>
 
@@ -137,7 +144,7 @@ Inertial modes are low-frequency oscillations in the sun restored by the Corioli
     <!-- Footer -->    
     <footer class="fixed-bottom">
       <div class="container mt-0">
-        © Copyright 2024 Neelanchal  Joshi. Powered by <a href="https://jekyllrb.com/" target="_blank" rel="external nofollow noopener">Jekyll</a> with <a href="https://github.com/alshedivat/al-folio" rel="external nofollow noopener" target="_blank">al-folio</a> theme. Hosted by <a href="https://pages.github.com/" target="_blank" rel="external nofollow noopener">GitHub Pages</a>. Photos from <a href="https://unsplash.com" target="_blank" rel="external nofollow noopener">Unsplash</a>.
+        © Copyright 2024 Neelanchal  Joshi. Powered by <a href="https://jekyllrb.com/" target="_blank" rel="external nofollow noopener">Jekyll</a> with <a href="https://github.com/alshedivat/al-folio" rel="external nofollow noopener" target="_blank">al-folio</a> theme. Hosted by <a href="https://pages.github.com/" target="_blank" rel="external nofollow noopener">GitHub Pages</a>.
 
       </div>
     </footer>
@@ -176,7 +183,14 @@ Inertial modes are low-frequency oscillations in the sun restored by the Corioli
   <script defer type="text/javascript" id="MathJax-script" src="https://cdn.jsdelivr.net/npm/mathjax@3.2.0/es5/tex-mml-chtml.js"></script>
   <script defer src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
 
-    
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id="></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){ window.dataLayer.push(arguments); }
+    gtag('js', new Date());
+    gtag('config', '');
+  </script>
     
 
 <!-- Scrolling Progress Bar -->
