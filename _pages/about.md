@@ -9,7 +9,7 @@ profile:
   image: prof_pic.jpg
   image_circular: false # crops the image to make it circular
   address: >
-    <p>BT1.E1.103</p>
+    <p>BT2.E2.100</p>
     <p>Max Planck Institute for Solar System Research</p>
     <p>Justus-von-Liebig-Weg 3</p>
     <p>Goettingen, Niedersachsen 37075</p>
@@ -25,4 +25,4 @@ I am interested in studying the newly discovered inertial modes of oscillations 
 
 When I am not busy scratching my head about science, you can find me playing some sport or the other, doing CrossFit, quizzing, or watching any movie/series I can get my hands on :) 
 
-This website is currently under construction. Your patience is much appreciated.
+This website is currently under construction. Your patience is much appreciated. And [here](https://www.youtube.com/watch?v=dQw4w9WgXcQ&ab_channel=RickAstley) is something fun for you to watch while you wait.
