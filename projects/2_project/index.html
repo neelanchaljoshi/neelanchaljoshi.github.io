@@ -134,6 +134,69 @@
 
 <p>The project aimed to generate high resolution magnetograms from Ca-II-K images from the Kodaikanal Dataset.</p>
 
+<h2 id="image-to-image-translation">image to image translation</h2>
+<p>Image to image translation is a machine learning problem that aims to learn the relation between a set of images and their corresponding output images and using these output images for various tasks such as style transfer etc.</p>
+
+<div class="row">
+    <div class="col-sm mt-3 mt-md-0">
+        <figure>
+
+  <picture>
+    
+    <source class="responsive-img-srcset" media="(max-width: 480px)" srcset="/assets/img/i2i_gan-480.webp"></source>
+    <source class="responsive-img-srcset" media="(max-width: 800px)" srcset="/assets/img/i2i_gan-800.webp"></source>
+    <source class="responsive-img-srcset" media="(max-width: 1400px)" srcset="/assets/img/i2i_gan-1400.webp"></source>
+    
+
+    <!-- Fallback to the original file -->
+    <img src="/assets/img/i2i_gan.png" class="img-fluid rounded z-depth-1" width="auto" height="auto" title="Image to Image " onerror="this.onerror=null; $('.responsive-img-srcset').remove();">
+
+  </picture>
+
+</figure>
+
+    </div>
+</div>
+<div class="caption">
+    Example of style transfer using an unsupervised generative adversarial network (Credits: Unpaired Image-to-Image Translation Using Cycle-Consistent Adversarial Networks(ICCV 2017))
+</div>
+
+<p>For our purpose, we used a supervised conditional generative adversarial network developed by Nvidia, in collaboration with UC Berkeley, called the pix2pixHD. In the following sections, I will describe these jargons. Don’t worry.</p>
+
+<p>*** Side note: Nobel prize in Physics for 2024 is awarded for the development of artificial neural networks!!!</p>
+
+<h2 id="conditional-generative-adversarial-networks">Conditional Generative Adversarial Networks</h2>
+<p>Now, the first very fundamental question that might arise is - Wha… Whattt?<br>
+Yep. Good Question.</p>
+
+<p>Well, cGANs basically are a type of generative adversarial networks that generate outputs based on a set of conditions. And GANs are special types of neural networks (well, two networks) that perform this task in a very special way. One of the networks, called the Generator, generates images using an input latent vector while the second network, called the Discriminator, tries to distinguish the fake image from the real one.</p>
+
+<div class="row">
+    <div class="col-sm mt-3 mt-md-0">
+        <figure>
+
+  <picture>
+    
+    <source class="responsive-img-srcset" media="(max-width: 480px)" srcset="/assets/img/cgan-480.webp"></source>
+    <source class="responsive-img-srcset" media="(max-width: 800px)" srcset="/assets/img/cgan-800.webp"></source>
+    <source class="responsive-img-srcset" media="(max-width: 1400px)" srcset="/assets/img/cgan-1400.webp"></source>
+    
+
+    <!-- Fallback to the original file -->
+    <img src="/assets/img/cgan.jpeg" class="img-fluid rounded z-depth-1" width="auto" height="auto" title="cGAN" onerror="this.onerror=null; $('.responsive-img-srcset').remove();">
+
+  </picture>
+
+</figure>
+
+    </div>
+</div>
+<div class="caption">
+    Example schematic of how a conditional GAN works vs how a standard GAN works (Credits: https://learnopencv.com/conditional-gan-cgan-in-pytorch-and-tensorflow/)
+</div>
+
+<p>Now, a very special type of cGAN that we used for this project is the pix2pixHD cGAN developed by Nvidia and UC Berkeley. This is a high resolution cGAN that can generate images based on semantic maps. You can read the paper <a href="https://tcwang0509.github.io/pix2pixHD/" rel="external nofollow noopener" target="_blank">here.</a></p>
+
           </article>
 
         </div>
