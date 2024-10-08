@@ -14,6 +14,12 @@
     - title: PhD in Physics
       institution: University of Goettingen, MPI for Solar System Research
       year: 2022 - present
+      
+    - title: MSc in Physics
+      institution: BITS Pilani
+      year: 2017 - 2022
+      description:
+        - Thesis - Solar Magnetogram Generation using Deep Learning
 
     - title: BE in Electrical and Electronics Engineering
       institution: BITS Pilani
@@ -21,11 +27,6 @@
       description:
         - Thesis - Estimating structural and dynamical parameters for Red Giants using MCMC simulations
 
-    - title: MSc in Physics
-      institution: BITS Pilani
-      year: 2017 - 2022
-      description:
-        - Thesis - Solar Magnetogram Generation using Deep Learning
 
 # - title: Experience
 #   type: time_table
