@@ -18,4 +18,4 @@ category: fun
 ### Pub quizzes at Duke's
 [Duke's Pub Quiz - May 06, 2025](/assets/quiz_pdfs/Duke's quiz 06.05.2025.pdf){:target="_blank"}
 
-[Duke's Pub Quiz - May 27, 2025 - Video](/assets/videos/shade.mov) 
+[Duke's Pub Quiz - May 27, 2025 - Video](/assets/videos/shade.mov){:target="_blank"} 
