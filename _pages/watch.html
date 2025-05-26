@@ -1,0 +1,49 @@
+---
+layout: page
+title: Watch Video
+permalink: /watch/
+---
+
+<div id="player" style="text-align: center; margin-top: 2rem;"></div>
+
+<script>
+  const params = new URLSearchParams(window.location.search);
+  const videoFile = params.get('file');
+
+  const allowedExtensions = ['mp4', 'webm', 'ogg', 'mov', 'm4v', 'avi', 'mkv'];
+
+  const isValid = videoFile && allowedExtensions.some(ext => videoFile.toLowerCase().endsWith('.' + ext));
+
+  function getMimeType(filename) {
+    const ext = filename.split('.').pop().toLowerCase();
+    const mimeTypes = {
+      mp4: 'video/mp4',
+      webm: 'video/webm',
+      ogg: 'video/ogg',
+      mov: 'video/quicktime',
+      m4v: 'video/x-m4v',
+      avi: 'video/x-msvideo',
+      mkv: 'video/x-matroska'
+    };
+    return mimeTypes[ext] || 'video/mp4';
+  }
+
+  if (isValid) {
+    const mimeType = getMimeType(videoFile);
+    const playerHTML = `
+      <h2 style="margin-bottom: 1rem;">Playing: ${videoFile}</h2>
+      <video width="800" controls autoplay style="max-width: 100%;">
+        <source src="/assets/videos/${videoFile}" type="${mimeType}">
+        Your browser does not support this video format.<br>
+        <a href="/assets/videos/${videoFile}" download>Click here to download the video</a>.
+      </video>
+    `;
+    document.getElementById('player').innerHTML = playerHTML;
+  } else {
+    document.getElementById('player').innerHTML = `
+      <p>No valid video specified.<br>
+      Use <code>/watch?file=yourvideo.mp4</code> or one of the supported formats:
+      <code>.mp4, .webm, .ogg, .mov, .m4v, .avi, .mkv</code>.</p>
+    `;
+  }
+</script>

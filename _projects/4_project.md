@@ -7,6 +7,8 @@ importance: 1
 category: fun
 ---
 ### Quizzes at IMPRS events
+
+
 [IMPRS Retreat 2023](/assets/quiz_pdfs/IMPRS%20Retreat%20Pub%20Quiz%20Oct%202023.pdf){:target="_blank"}
 
 [IMPRS Retreat 2024](/assets/quiz_pdfs/Neel’s%20IMPRS%20Pub%20Quiz%20Oct%202024.pdf){:target="_blank"}
@@ -16,6 +18,13 @@ category: fun
 
 
 ### Pub quizzes at Duke's
-[Duke's Pub Quiz - May 06, 2025](/assets/quiz_pdfs/Duke's quiz 06.05.2025.pdf){:target="_blank"}
 
-[Duke's Pub Quiz - May 27, 2025 - Video](/assets/videos/shade.mov){:target="_blank"} 
+#### May 06, 2025
+[Quiz PDF](/assets/quiz_pdfs/Duke's quiz 06.05.2025.pdf){:target="_blank"}
+
+#### May 27, 2025
+[Video Question](/watch?file=vq_27052025.mp4){:target="_blank"}
+
+[Round 1](/assets/quiz_pdfs/Duke's%20quiz%2027.05.2025%20Round%201.pdf){:target="_blank"}
+
+[Rounds 2,3,4](/assets/quiz_pdfs/Duke's%20quiz%2027.05.2025%20Round234.pdf){:target="_blank"}  
