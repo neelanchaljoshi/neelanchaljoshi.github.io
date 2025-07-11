@@ -26,6 +26,18 @@ const TMDB_API_KEY = "5e249bec0d03956a7c258cf77582f8d9";
 
 const localWords = ["rocket", "sun", "tree", "car", "house", "cat", "dog", "bicycle", "flower", "moon"];
 
+// Resize canvas internal pixels to match CSS size for crisp drawing
+function resizeCanvas() {
+  const width = canvas.clientWidth;
+  const height = canvas.clientHeight;
+  if (canvas.width !== width || canvas.height !== height) {
+    canvas.width = width;
+    canvas.height = height;
+  }
+}
+resizeCanvas();
+window.addEventListener("resize", resizeCanvas);
+
 async function fetchRandomWord() {
   try {
     const res = await fetch("https://random-word-api.herokuapp.com/word?number=1");
@@ -72,13 +84,13 @@ function clearCanvas() {
 }
 
 document.addEventListener("DOMContentLoaded", () => {
-  // Default word at start
   setNewWord("word");
 
   wordBtn.addEventListener("click", () => setNewWord("word"));
   movieBtn.addEventListener("click", () => setNewWord("movie"));
 });
 
+// Mouse Events
 canvas.addEventListener("mousedown", e => {
   drawing = true;
   ctx.beginPath();
@@ -95,6 +107,43 @@ canvas.addEventListener("mousemove", e => {
 
 canvas.addEventListener("mouseup", () => (drawing = false));
 canvas.addEventListener("mouseleave", () => (drawing = false));
+
+// Touch Events
+function getTouchPos(canvas, touchEvent) {
+  const rect = canvas.getBoundingClientRect();
+  return {
+    x: touchEvent.touches[0].clientX - rect.left,
+    y: touchEvent.touches[0].clientY - rect.top,
+  };
+}
+
+canvas.addEventListener("touchstart", e => {
+  e.preventDefault();
+  drawing = true;
+  const pos = getTouchPos(canvas, e);
+  ctx.beginPath();
+  ctx.moveTo(pos.x, pos.y);
+  push(strokesRef, { x: pos.x, y: pos.y, type: "start" });
+});
+
+canvas.addEventListener("touchmove", e => {
+  e.preventDefault();
+  if (!drawing) return;
+  const pos = getTouchPos(canvas, e);
+  ctx.lineTo(pos.x, pos.y);
+  ctx.stroke();
+  push(strokesRef, { x: pos.x, y: pos.y, type: "draw" });
+});
+
+canvas.addEventListener("touchend", e => {
+  e.preventDefault();
+  drawing = false;
+});
+
+canvas.addEventListener("touchcancel", e => {
+  e.preventDefault();
+  drawing = false;
+});
 
 clearBtn.addEventListener("click", () => {
   if (confirm("Clear the entire board for everyone?")) {
