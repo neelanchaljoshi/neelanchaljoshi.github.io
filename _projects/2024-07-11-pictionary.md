@@ -7,6 +7,6 @@ importance: 1
 category: fun
 ---
 
-🎨 [Start Drawing](/projects/pictionary/draw.html)  
-📺 [View the Drawing (TV Cast)](/projects/pictionary/view.html)
+🎨 [Start Drawing](/projects/pictionary/draw/)  
+📺 [View the Drawing (TV Cast)](/projects/pictionary/view/)
 
