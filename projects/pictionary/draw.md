@@ -23,7 +23,7 @@ permalink: /projects/pictionary/draw/
     Clear Board
   </button>
 
-  <canvas id="canvas" width="800" height="600" style="
+  <canvas id="canvas" style="
     border: 1px solid #ddd;
     border-radius: 4px;
     width: 100vw;
@@ -32,6 +32,7 @@ permalink: /projects/pictionary/draw/
     max-height: 600px;
     box-shadow: 0 1px 4px rgba(0,0,0,0.1);
     touch-action: none;
+    display: block;
   "></canvas>
 
 </section>
@@ -43,7 +44,6 @@ permalink: /projects/pictionary/draw/
     background-color: #005f99;
   }
 
-  /* Reduce margin/padding on small screens */
   @media (max-width: 600px) {
     .project-content {
       margin-top: 1rem !important;

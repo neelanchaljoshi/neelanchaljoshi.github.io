@@ -23,16 +23,18 @@ const strokesRef = ref(database, "rooms/room1/strokes");
 const wordRef = ref(database, "rooms/room1/currentWord");
 
 const TMDB_API_KEY = "5e249bec0d03956a7c258cf77582f8d9";
-
 const localWords = ["rocket", "sun", "tree", "car", "house", "cat", "dog", "bicycle", "flower", "moon"];
 
-// Resize canvas internal pixels to match CSS size for crisp drawing
+// ✅ High-DPI canvas scaling
 function resizeCanvas() {
+  const dpi = window.devicePixelRatio || 1;
   const width = canvas.clientWidth;
   const height = canvas.clientHeight;
-  if (canvas.width !== width || canvas.height !== height) {
-    canvas.width = width;
-    canvas.height = height;
+
+  if (canvas.width !== width * dpi || canvas.height !== height * dpi) {
+    canvas.width = width * dpi;
+    canvas.height = height * dpi;
+    ctx.setTransform(dpi, 0, 0, dpi, 0, 0);
   }
 }
 resizeCanvas();
@@ -90,7 +92,7 @@ document.addEventListener("DOMContentLoaded", () => {
   movieBtn.addEventListener("click", () => setNewWord("movie"));
 });
 
-// Mouse Events
+// 🖱️ Mouse Events
 canvas.addEventListener("mousedown", e => {
   drawing = true;
   ctx.beginPath();
@@ -105,15 +107,15 @@ canvas.addEventListener("mousemove", e => {
   push(strokesRef, { x: e.offsetX, y: e.offsetY, type: "draw" });
 });
 
-canvas.addEventListener("mouseup", () => (drawing = false));
-canvas.addEventListener("mouseleave", () => (drawing = false));
+canvas.addEventListener("mouseup", () => drawing = false);
+canvas.addEventListener("mouseleave", () => drawing = false);
 
-// Touch Events
+// 📱 Touch Events
 function getTouchPos(canvas, touchEvent) {
   const rect = canvas.getBoundingClientRect();
   return {
     x: touchEvent.touches[0].clientX - rect.left,
-    y: touchEvent.touches[0].clientY - rect.top,
+    y: touchEvent.touches[0].clientY - rect.top
   };
 }
 
@@ -124,7 +126,7 @@ canvas.addEventListener("touchstart", e => {
   ctx.beginPath();
   ctx.moveTo(pos.x, pos.y);
   push(strokesRef, { x: pos.x, y: pos.y, type: "start" });
-});
+}, { passive: false });
 
 canvas.addEventListener("touchmove", e => {
   e.preventDefault();
@@ -133,17 +135,10 @@ canvas.addEventListener("touchmove", e => {
   ctx.lineTo(pos.x, pos.y);
   ctx.stroke();
   push(strokesRef, { x: pos.x, y: pos.y, type: "draw" });
-});
+}, { passive: false });
 
-canvas.addEventListener("touchend", e => {
-  e.preventDefault();
-  drawing = false;
-});
-
-canvas.addEventListener("touchcancel", e => {
-  e.preventDefault();
-  drawing = false;
-});
+canvas.addEventListener("touchend", () => drawing = false);
+canvas.addEventListener("touchcancel", () => drawing = false);
 
 clearBtn.addEventListener("click", () => {
   if (confirm("Clear the entire board for everyone?")) {
