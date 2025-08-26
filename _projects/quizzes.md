@@ -27,9 +27,9 @@ category: fun
 ##### May 27, 2025
 [Video Question](/watch?file=vq_27052025.mp4){:target="_blank"}
 
-[Round 1](/assets/quiz_pdfs/27.05.2025/Duke's%20quiz%2027.05.2025%20Round%201.pdf){:target="_blank"}
+[Trivia Round](/assets/quiz_pdfs/27.05.2025/Duke's%20quiz%2027.05.2025%20Round%201.pdf){:target="_blank"}
 
-[Rounds 2,3,4](/assets/quiz_pdfs/27.05.2025/Duke's%20quiz%2027.05.2025%20Round234.pdf){:target="_blank"}
+[Special Rounds](/assets/quiz_pdfs/27.05.2025/Duke's%20quiz%2027.05.2025%20Round234.pdf){:target="_blank"}
 
 ##### August 05, 2025
 [Trivia Round](/assets/quiz_pdfs/05.08.2025/trivia.pdf){:target="_blank"}
