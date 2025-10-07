@@ -42,13 +42,13 @@ category: fun
 
 [Special Rounds](/assets/quiz_pdfs/26.08.2025/Duke's%20quiz%2026.08.2025%20Special.pdf){:target="_blank"}
 
-#### September 16, 2025
+##### September 16, 2025
 
 [Trivia Round](/assets/quiz_pdfs/16.09.2025/Duke's%20quiz%2016.09.2025%20Trivia.pdf){:target="_blank"}
 
 [Special Rounds](/assets/quiz_pdfs/16.09.2025/Duke's%20quiz%2016.09.2025%20Special.pdf){:target="_blank"}
 
-#### October 07, 2025
+##### October 07, 2025
 
 [Trivia Round](/assets/quiz_pdfs/07.10.2025/Duke's%20quiz%2007.10.2025%20Trivia.pdf){:target="_blank"}
 
