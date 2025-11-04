@@ -59,3 +59,9 @@ category: fun
 [Trivia Round](/assets/quiz_pdfs/14.10.2025/Duke's%20quiz%2014.10.2025%20Trivia.pdf){:target="_blank"}
 
 [Special Rounds](/assets/quiz_pdfs/14.10.2025/Duke's%20quiz%2014.10.2025%20Special.pdf){:target="_blank"}
+
+##### November 4, 2025
+
+[Trivia Round](/assets/quiz_pdfs/04.11.2025/Duke's%20quiz%2004.11.25%20Trivia.pdf){:target="_blank"}
+
+[Special Rounds](/assets/quiz_pdfs/04.11.2025/Duke's%20quiz%2004.11.25%20Special.pdf){:target="_blank"}
