@@ -6,7 +6,7 @@ subtitle: <a href='https://www.mps.mpg.de/'>Max Planck Institute for Solar Syste
 
 profile:
   align: right
-  image: prof_pic.jpg
+  image: pic_goe.jpeg
   image_circular: false # crops the image to make it circular
   address: >
     <p>BT2.E2.100</p>
