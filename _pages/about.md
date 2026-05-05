@@ -12,7 +12,7 @@ profile:
     <p>BT2.E2.100</p>
     <p>Max Planck Institute for Solar System Research</p>
     <p>Justus-von-Liebig-Weg 3</p>
-    <p>Goettingen, Niedersachsen 37075</p>
+    <p>Goettingen, Niedersachsen 37077</p>
 
 news: false  # includes a list of news items
 selected_papers: false # includes a list of papers marked as "selected={true}"
