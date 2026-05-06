@@ -26,6 +26,8 @@ jobs:
         ruby-version: '3.2.1'
         bundler-cache: true
     - name: Install and Build 🔧
+      env:
+        JEKYLL_GITHUB_TOKEN: ${{ secrets.GH_TOKEN }}
       run: |
         npm install -g mermaid.cli
         bundle exec jekyll build
@@ -34,4 +36,3 @@ jobs:
       uses: JamesIves/github-pages-deploy-action@v4
       with:
         folder: _site
-
