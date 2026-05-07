@@ -2,9 +2,7 @@ github_users:
   - neelanchaljoshi
 
 github_repos:
-  - neelanchaljoshi/neelanchaljoshi.github.io
   - neelanchaljoshi/local_correlation_tracking
-  - neelanchaljoshi/learning-julia
-  - neelanchaljoshi/learning-jax
   - neelanchaljoshi/CZS-summer-school
+  - neelanchaljoshi/clean_code
   - neelanchaljoshi/qiskit_projects
