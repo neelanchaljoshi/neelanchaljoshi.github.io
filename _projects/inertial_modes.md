@@ -27,3 +27,5 @@ These eigenfunctions carry rich physical information. Their precise shape is sen
 Using two independent tracers — granules and magnetic network features — also allows us to cross-validate our flow measurements, adding robustness to the detections.
 
 Taken together, this opens up inertial modes as a new window into the solar interior, probing regions and physical processes that are difficult to access with classical helioseismic techniques alone.
+
+Further information on inertial modes can be found in my [papers](/publications).
