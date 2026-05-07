@@ -226,6 +226,13 @@ Yep. Good Question.</p>
 
 <p>Using this technique, the network was able to learn the relationship between Ca II K images and magnetograms and could generate realistic magnetograms given a random Ca II K image. But of course this is far from perfect, since Ca II K images do not have information about the polarity of magnetic features. This means that the polarity needs to be assigned manually. For each observed magnetic feature, we assign the polarity based on the solar cycle. So alternating solar cycles will have alternating leading polarities (Leading polarity means the polarity of the active region that is in the direction of the solar rotation, and we also know that the sign alternates every solar cycle, which is referred to as Hale’s Law).</p>
 
+<h2 id="results-and-outlook">Results and Outlook</h2>
+
+<p>The generated pseudo-magnetograms show good qualitative agreement with real magnetograms, successfully reproducing the large-scale distribution of magnetic flux across the solar disk. Quantitatively, the network performs well in regions of strong magnetic field, though it naturally struggles in quiet Sun regions where the Ca II K signal is weak and the correspondence with the magnetic field is less direct.</p>
+
+<p>The real value of this approach lies in the temporal coverage it unlocks. The KSO dataset spans over a century, covering multiple solar cycles, whereas direct magnetogram observations only became available from the 1970s onwards. By generating pseudo-magnetograms from the KSO Ca II K archive, we can potentially extend the magnetic record of the sun back by several decades, providing a longer baseline for studying the solar dynamo and long-term variability of solar magnetic activity.
+This work is a demonstration of how machine learning can be used not just as a tool for data analysis, but as a way to bridge observational gaps — extracting physics from archival data that was never originally intended for this purpose.</p>
+
           </article>
 
         </div>
@@ -236,7 +243,7 @@ Yep. Good Question.</p>
     <footer class="fixed-bottom">
       <div class="container mt-0">
         © Copyright 2026 Neelanchal  Joshi. Powered by <a href="https://jekyllrb.com/" target="_blank" rel="external nofollow noopener">Jekyll</a> with <a href="https://github.com/alshedivat/al-folio" rel="external nofollow noopener" target="_blank">al-folio</a> theme. Hosted by <a href="https://pages.github.com/" target="_blank" rel="external nofollow noopener">GitHub Pages</a>.
-Last updated: May 06, 2026.
+Last updated: May 07, 2026.
       </div>
     </footer>
 
