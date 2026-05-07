@@ -7,11 +7,11 @@ importance: 2
 category: work
 ---
 
-Over the last 100 years, the field of solar physics has seen an unprecedented amount of data being generated. Space  and ground based telescopes provide long-term, continuous coverage of the sun. Naturally, with such an explosion of information, our ability to extract meaningful science is also enhanced. In parallel, the field of machine learning has also burgeoned in the last few years, allowing a harmonic amalgamation of these two fields. 
+Over the last 100 years, the field of solar physics has seen an unprecedented amount of data being generated. Space  and ground based telescopes provide long-term, continuous coverage of the sun. Naturally, with such an explosion of information, our ability to extract meaningful science is also enhanced. In parallel, the field of machine learning has also burgeoned in the last few years, allowing a harmonic amalgamation of these two fields.
 
-The Kodaikanal Solar Observatory (KSO) has been taking daily images of the sun since 1904. Long term continuous coverage of the sun is essential in understanding the solar dynamo and studying the 22 year solar cycle. Studying this phenomenon is not only crucial in understanding solar dynamics, but also in understanding its effects on space weather and consequently, on Earth. 
+The Kodaikanal Solar Observatory (KSO) has been taking daily images of the sun since 1904. Long term continuous coverage of the sun is essential in understanding the solar dynamo and studying the 22 year solar cycle. Studying this phenomenon is not only crucial in understanding solar dynamics, but also in understanding its effects on space weather and consequently, on Earth.
 
-The project aimed to generate high resolution magnetograms from Ca-II-K images from the Kodaikanal Dataset. 
+The project aimed to generate high resolution magnetograms from Ca-II-K images from the Kodaikanal Dataset.
 
 ## Image-to-Image translation
 Image to image translation is a machine learning problem that aims to learn the relation between a set of images and their corresponding output images and using these output images for various tasks such as style transfer etc.
@@ -34,7 +34,7 @@ Now, the first very fundamental question that might arise is - Wha... Whattt?\
 Yep. Good Question.
 
 
-Well, cGANs basically are a type of generative adversarial networks that generate outputs based on a set of conditions. And GANs are special types of neural networks (well, two networks) that perform this task in a very special way. One of the networks, called the Generator, generates images using an input latent vector while the second network, called the Discriminator, tries to distinguish the fake image from the real one.  
+Well, cGANs basically are a type of generative adversarial networks that generate outputs based on a set of conditions. And GANs are special types of neural networks (well, two networks) that perform this task in a very special way. One of the networks, called the Generator, generates images using an input latent vector while the second network, called the Discriminator, tries to distinguish the fake image from the real one.
 
 
 <div class="row">
@@ -61,3 +61,10 @@ We use this high resolution network in order to translate a set of Ca II K solar
 </div>
 
 Using this technique, the network was able to learn the relationship between Ca II K images and magnetograms and could generate realistic magnetograms given a random Ca II K image. But of course this is far from perfect, since Ca II K images do not have information about the polarity of magnetic features. This means that the polarity needs to be assigned manually. For each observed magnetic feature, we assign the polarity based on the solar cycle. So alternating solar cycles will have alternating leading polarities (Leading polarity means the polarity of the active region that is in the direction of the solar rotation, and we also know that the sign alternates every solar cycle, which is referred to as Hale's Law).
+
+## Results and Outlook
+
+The generated pseudo-magnetograms show good qualitative agreement with real magnetograms, successfully reproducing the large-scale distribution of magnetic flux across the solar disk. Quantitatively, the network performs well in regions of strong magnetic field, though it naturally struggles in quiet Sun regions where the Ca II K signal is weak and the correspondence with the magnetic field is less direct.
+
+The real value of this approach lies in the temporal coverage it unlocks. The KSO dataset spans over a century, covering multiple solar cycles, whereas direct magnetogram observations only became available from the 1970s onwards. By generating pseudo-magnetograms from the KSO Ca II K archive, we can potentially extend the magnetic record of the sun back by several decades, providing a longer baseline for studying the solar dynamo and long-term variability of solar magnetic activity.
+This work is a demonstration of how machine learning can be used not just as a tool for data analysis, but as a way to bridge observational gaps — extracting physics from archival data that was never originally intended for this purpose.
