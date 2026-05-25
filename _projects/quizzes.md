@@ -107,8 +107,8 @@ category: fun
 [Special Rounds](/assets/quiz_pdfs/14.04.2026/Duke's%20quiz%2014.04.2026%20Special.pdf){:target="_blank"}
 
 
-##### May 19, 2026
+##### May 26, 2026
 
-[Trivia Round](/assets/quiz_pdfs/19.05.2026/Duke's%20quiz%2019.05.2026%20Trivia.pdf){:target="_blank"}
+[Trivia Round](/assets/quiz_pdfs/26.05.2026/Duke's%20quiz%2026.05.2026%20Trivia.pdf){:target="_blank"}
 
-[Special Rounds](/assets/quiz_pdfs/19.05.2026/Duke's%20quiz%2019.05.2026%20Special.pdf){:target="_blank"}
+[Special Rounds](/assets/quiz_pdfs/26.05.2026/Duke's%20quiz%2026.05.2026%20Special.pdf){:target="_blank"}
