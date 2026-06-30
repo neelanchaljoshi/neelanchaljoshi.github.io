@@ -15,7 +15,7 @@ But acoustic modes aren't the only oscillations a star like the Sun can support.
 
 <div class="row justify-content-sm-center">
     <div class="col-sm mt-3 mt-md-0">
-        {% include figure.html path="assets/img/project_imgs/m8_rvort_streamlines_35deg.pdf" title="overview" class="img-fluid rounded z-depth-1" %}
+        {% include figure.html path="assets/img/project_imgs/m8_rvort_streamlines_35deg.png" title="overview" class="img-fluid rounded z-depth-1" %}
     </div>
 </div>
 <div class='caption'>
@@ -34,11 +34,11 @@ LCT is well established in solar physics and shares its underlying logic with te
     </div>
 </div>
 <div class='caption'>
-    A cartoon explaining local correlation tracking. A small patch on the Sun is
-    imaged and apodized (highlighted by the white circle) to isolate features of interest. In the
-    successive image, the features have moved. The horizontal flow velocity is determined
-    by measuring the shift of the peak of the cross-correlation function between these images.
-    From [Hanasoge et al. (2016)](https://www.annualreviews.org/content/journals/10.1146/annurev-fluid-122414-034534), with permission.
+    A cartoon explaining local correlation tracking. A small patch on the Sun is imaged and apodized
+    (highlighted by the white circle) to isolate features of interest. In the successive image, the
+    features have moved. The horizontal flow velocity is determined by measuring the shift of the peak
+    of the cross-correlation function between these images. From
+    <a href="https://www.annualreviews.org/doi/10.1146/annurev-astro-081514-absence" target="_blank">Hanasoge et al. (2016)</a>.
 </div>
 
 ## Why LCT, and not helioseismology alone
@@ -60,13 +60,18 @@ Each candidate mode is characterised by its **azimuthal order** *m* (how many os
 
 <div class="row justify-content-sm-center">
     <div class="col-sm mt-3 mt-md-0">
-        {% include figure.html path="assets/img/project_imgs/ps_mag_gran_rossby.pdf" title="overview" class="img-fluid rounded z-depth-1" %}
+        {% include figure.html path="assets/img/project_imgs/ps_mag_gran_rossby.png" title="overview" class="img-fluid rounded z-depth-1" %}
     </div>
 </div>
 <div class='caption'>
-    Power spectra of $u_\theta^+$ from magnetic feature tracking (LCTMag; left) and granulation tracking (LCTGran; right) as a function of frequency and azimuthal wavenumbers $m$ over the period 2010--2024. The power spectrum is averaged over latitudes within $\pm30\degree$. The orange curve shows the theoretical dispersion relation of sectoral Rossby waves, $\omega = -2\Omega_\text{Carr}/(m+1)$, where $\Omega_\text{Carr}$ is the Carrington rotation rate. The curve is limited to show the theoretical frequencies of the observed modes from $m=3$ onwards.
+    Power spectra of \(u_\theta^+\) from magnetic feature tracking (LCTMag; left) and granulation
+    tracking (LCTGran; right) as a function of frequency and azimuthal wavenumbers \(m\) over the
+    period 2010–2024. The power spectrum is averaged over latitudes within \(\pm 30°\). The orange
+    curve shows the theoretical dispersion relation of sectoral Rossby waves,
+    \(\omega = -2\Omega_\text{Carr}/(m+1)\), where \(\Omega_\text{Carr}\) is the Carrington
+    rotation rate. The curve is limited to show the theoretical frequencies of the observed modes
+    from \(m=3\) onwards.
 </div>
-
 
 ## What the eigenfunctions tell us
 
@@ -77,7 +82,6 @@ These eigenfunctions are not just a confirmation that a mode exists — their de
 - The redistribution of **angular momentum by Reynolds stresses**
 
 By comparing observed eigenfunctions against theoretical predictions, it becomes possible to place direct empirical constraints on these otherwise hidden properties of the solar interior.
-
 
 A further strength of this approach is the use of **two independent tracers** — granules and magnetic network features — which allows flow measurements to be cross-validated against one another, adding confidence to each detection.
 
