@@ -17,10 +17,9 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <title>news | Neelanchal  Joshi</title>
+    <title>esa vigil/pmi instrument | Neelanchal  Joshi</title>
     <meta name="author" content="Neelanchal  Joshi">
-    <meta name="description" content="A simple, whitespace theme for academics. Based on [*folio](https://github.com/bogoli/-folio) design.
-">
+    <meta name="description" content="characterising the instrument before it launches">
     <meta name="keywords" content="jekyll, jekyll-theme, academic-website, portfolio-website">
 
 
@@ -41,7 +40,7 @@
     <link rel="shortcut icon" href="data:image/svg+xml,&lt;svg%20xmlns=%22http://www.w3.org/2000/svg%22%20viewBox=%220%200%20100%20100%22&gt;&lt;text%20y=%22.9em%22%20font-size=%2290%22&gt;%E2%98%80%EF%B8%8F&lt;/text&gt;&lt;/svg&gt;">
     
     <link rel="stylesheet" href="/assets/css/main.css">
-    <link rel="canonical" href="https://neelanchaljoshi.github.io/news/">
+    <link rel="canonical" href="https://neelanchaljoshi.github.io/projects/esa-vigil-pmi/">
     
     <!-- Dark Mode -->
     
@@ -124,40 +123,139 @@
         <div class="post">
 
           <header class="post-header">
-            <h1 class="post-title">news</h1>
-            <p class="post-description"></p>
+            <h1 class="post-title">esa vigil/pmi instrument</h1>
+            <p class="post-description">characterising the instrument before it launches</p>
           </header>
 
           <article>
-                      
-          <div class="news">
-            <div class="table-responsive">
-              <table class="table table-sm table-borderless">
-               
-                <tr>
-                  <th scope="row">Jan 15, 2016</th>
-                  <td>
-                    A simple inline announcement with Markdown emoji! <img class="emoji" title=":sparkles:" alt=":sparkles:" src="https://github.githubassets.com/images/icons/emoji/unicode/2728.png" height="20" width="20"> <img class="emoji" title=":smile:" alt=":smile:" src="https://github.githubassets.com/images/icons/emoji/unicode/1f604.png" height="20" width="20">
- 
-                  </td>
-                </tr> 
-                <tr>
-                  <th scope="row">Nov 7, 2015</th>
-                  <td>
-                    <a class="news-title" href="/news/announcement_2/">A long announcement with details</a> 
-                  </td>
-                </tr> 
-                <tr>
-                  <th scope="row">Oct 22, 2015</th>
-                  <td>
-                    A simple inline announcement.
- 
-                  </td>
-                </tr> 
-              </table>
-            </div> 
-          </div>
+            <h2 id="the-mission">The mission</h2>
 
+<p>ESA’s <strong>Vigil</strong> mission will station a spacecraft at the <strong>L5 Lagrange point</strong>, roughly 60° behind Earth in its orbit around the Sun. This vantage point is unique: it lets Vigil observe regions of the Sun several days before they rotate into view from Earth, giving forecasters early warning of solar activity that could threaten power grids, satellites, and communication infrastructure on Earth.</p>
+
+<p>One of Vigil’s key instruments is the <strong>PMI</strong> (Photospheric Magnetic field Imager), which will continuously image the Sun’s surface to track magnetic fields and surface flows. Like any space instrument, PMI has to be designed and validated long before launch — which raises a practical question: <strong>what will this instrument actually be able to measure, and under what operating conditions?</strong></p>
+
+<div class="row justify-content-sm-center">
+    <div class="col-sm mt-3 mt-md-0">
+        <figure>
+
+  <picture>
+    
+    <source class="responsive-img-srcset" media="(max-width: 480px)" srcset="/assets/img/project_imgs/l5_orbit_diagram-480.webp"></source>
+    <source class="responsive-img-srcset" media="(max-width: 800px)" srcset="/assets/img/project_imgs/l5_orbit_diagram-800.webp"></source>
+    <source class="responsive-img-srcset" media="(max-width: 1400px)" srcset="/assets/img/project_imgs/l5_orbit_diagram-1400.webp"></source>
+    
+
+    <!-- Fallback to the original file -->
+    <img src="/assets/img/project_imgs/l5_orbit_diagram.png" class="img-fluid rounded z-depth-1" width="auto" height="auto" title="L5sun" onerror="this.onerror=null; $('.responsive-img-srcset').remove();">
+
+  </picture>
+
+</figure>
+
+    </div>
+</div>
+<div class="caption">
+    A simple Sun–Earth–L5 geometry diagram: the Sun, Earth's orbit, and the L5 point marked 60° behind Earth, with an arrow indicating the early-warning view of approaching solar regions.
+</div>
+
+<h2 id="the-question-i-worked-on">The question I worked on</h2>
+
+<p>Different solar flows live at very different physical scales:</p>
+
+<table>
+  <thead>
+    <tr>
+      <th>Flow</th>
+      <th>Typical amplitude</th>
+      <th>Spatial scale</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Differential rotation</td>
+      <td>~2 km/s</td>
+      <td>Global</td>
+    </tr>
+    <tr>
+      <td>Supergranulation</td>
+      <td>~300 m/s</td>
+      <td>~30 Mm cells</td>
+    </tr>
+    <tr>
+      <td>Active region flows</td>
+      <td>~50 m/s</td>
+      <td>Local</td>
+    </tr>
+  </tbody>
+</table>
+
+<p>Each of these requires a different combination of <strong>image resolution</strong>, <strong>observing cadence</strong>, and <strong>observation duration</strong> to be reliably recovered. Before PMI is built and launched, mission planners need to know: for a given set of operational parameters, which of these flows can actually be measured — and which can’t?</p>
+
+<p>This is a question that’s very hard to answer with real data, because the instrument doesn’t exist yet. So I built a <strong>digital twin</strong> instead.</p>
+
+<h2 id="building-the-digital-twin">Building the digital twin</h2>
+
+<p>The approach starts from existing, high-quality observations and works backward to simulate what a <em>lower-quality, future</em> instrument would see:</p>
+
+<ol>
+  <li>
+<strong>Start with real data.</strong> I used high-resolution magnetogram and Dopplergram images from <strong>SDO/HMI</strong>, an instrument currently in operation, as a stand-in for “ground truth” solar flows.</li>
+  <li>
+<strong>Model the optics.</strong> I built <strong>PSF (point spread function) and Airy-disk models</strong> representing how PMI’s optics will blur and degrade an image, based on its planned aperture and design parameters.</li>
+  <li>
+<strong>Generate synthetic PMI data.</strong> Applying these optical models — along with realistic noise and resolution degradation — to the HMI images produces synthetic datasets that approximate what PMI itself would observe, across a range of possible operational configurations.</li>
+</ol>
+
+<div class="row justify-content-sm-center">
+    <div class="col-sm mt-3 mt-md-0">
+        <figure>
+
+  <picture>
+    
+    <source class="responsive-img-srcset" media="(max-width: 480px)" srcset="/assets/img/project_imgs/pmi_hmi_comparison_mag-480.webp"></source>
+    <source class="responsive-img-srcset" media="(max-width: 800px)" srcset="/assets/img/project_imgs/pmi_hmi_comparison_mag-800.webp"></source>
+    <source class="responsive-img-srcset" media="(max-width: 1400px)" srcset="/assets/img/project_imgs/pmi_hmi_comparison_mag-1400.webp"></source>
+    
+
+    <!-- Fallback to the original file -->
+    <img src="/assets/img/project_imgs/pmi_hmi_comparison_mag.png" class="img-fluid rounded z-depth-1" width="auto" height="auto" title="overview" onerror="this.onerror=null; $('.responsive-img-srcset').remove();">
+
+  </picture>
+
+</figure>
+
+    </div>
+</div>
+<div class="caption">
+    A before/after image pair: a sharp HMI image next to the same image after applying the PSF/Airy-disk degradation model, simulating what PMI would actually see.
+</div>
+
+<ol>
+  <li>
+<strong>Recover flows with Local Correlation Tracking.</strong> I ran the same flow-tracking pipeline I use elsewhere in my research (see my <a href="#">inertial modes work</a>) on these synthetic datasets, to see how well each flow category could actually be recovered.</li>
+  <li>
+<strong>Map out the trade-offs.</strong> By repeating this across a grid of operational parameters — cadence, resolution, observation duration — I could map out which combinations of settings allow which flows to be measured, and where the limits are.</li>
+</ol>
+
+<h2 id="what-it-told-esa">What it told ESA</h2>
+
+<p>The output of this work wasn’t just a set of plots — it translated directly into <strong>operational guidance</strong> for the mission:</p>
+
+<ul>
+  <li>Concrete recommendations on the <strong>downlink cadence, image resolution, and observation duration</strong> needed to recover each category of solar flow</li>
+  <li>A clear statement of which scientific goals are <strong>achievable within the mission’s real operational constraints</strong>, and which are not</li>
+  <li>A reference point for the broader solar physics community on what PMI will and won’t be able to contribute, ahead of launch</li>
+</ul>
+
+<p>This is, in essence, simulation used to catch a design problem <em>before</em> it becomes an expensive one — informing decisions while the mission is still on paper, rather than discovering the limitations once the spacecraft is already in space.</p>
+
+<h2 id="why-this-approach-matters">Why this approach matters</h2>
+
+<p>Space missions are enormously expensive and effectively impossible to “patch” after launch. A digital twin lets you stress-test an instrument’s capabilities against many possible designs and operating modes cheaply, in software, long before any hardware is built. The same logic applies far beyond solar physics — anywhere a complex physical system needs to be characterised, validated, or calibrated before it’s trusted with a real, costly measurement.</p>
+
+<hr>
+
+<p><em>This work forms the second strand of my doctoral thesis, alongside my study of <a href="#">solar inertial modes</a>. A first-author paper describing this analysis is currently in preparation.</em></p>
 
           </article>
 
