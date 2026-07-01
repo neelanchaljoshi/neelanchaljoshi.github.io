@@ -27,11 +27,32 @@ One of Vigil's key instruments is the **PMI** (Photospheric Magnetic field Image
 
 Different solar flows live at very different physical scales:
 
-| Flow | Typical amplitude | Spatial scale |
-|---|---|---|
-| Differential rotation | ~2 km/s | Global |
-| Supergranulation | ~300 m/s | ~30 Mm cells |
-| Active region flows | ~50 m/s | Local |
+<table class="table table-sm table-bordered" style="max-width:600px; margin: 1.5rem auto;">
+  <thead class="thead-dark">
+    <tr>
+      <th>Flow</th>
+      <th>Typical amplitude</th>
+      <th>Spatial scale</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Differential rotation</td>
+      <td>~2 km/s</td>
+      <td>Global</td>
+    </tr>
+    <tr>
+      <td>Supergranulation</td>
+      <td>~300 m/s</td>
+      <td>~30 Mm cells</td>
+    </tr>
+    <tr>
+      <td>Active region flows</td>
+      <td>~50 m/s</td>
+      <td>Local</td>
+    </tr>
+  </tbody>
+</table>
 
 Each of these requires a different combination of **image resolution**, **observing cadence**, and **observation duration** to be reliably recovered. Before PMI is built and launched, mission planners need to know: for a given set of operational parameters, which of these flows can actually be measured — and which can't?
 
@@ -55,7 +76,7 @@ The approach starts from existing, high-quality observations and works backward 
 </div>
 
 
-4. **Recover flows with Local Correlation Tracking.** I ran the same flow-tracking pipeline I use elsewhere in my research (see my [inertial modes work](#)) on these synthetic datasets, to see how well each flow category could actually be recovered.
+4. **Recover flows with Local Correlation Tracking.** I ran the same flow-tracking pipeline I use elsewhere in my research (see my [inertial modes work](https://neelanchaljoshi.github.io/projects/inertial_modes/)) on these synthetic datasets, to see how well each flow category could actually be recovered.
 5. **Map out the trade-offs.** By repeating this across a grid of operational parameters — cadence, resolution, observation duration — I could map out which combinations of settings allow which flows to be measured, and where the limits are.
 
 
@@ -75,4 +96,4 @@ Space missions are enormously expensive and effectively impossible to "patch" af
 
 ---
 
-*This work forms the second strand of my doctoral thesis, alongside my study of [solar inertial modes](#). A first-author paper describing this analysis is currently in preparation.*
+*This work forms the second strand of my doctoral thesis, alongside my study of [solar inertial modes](https://neelanchaljoshi.github.io/projects/inertial_modes/). A first-author paper describing this analysis is currently in preparation.*
