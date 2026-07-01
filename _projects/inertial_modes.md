@@ -54,7 +54,7 @@ The analysis pipeline proceeds in several stages:
 1. **Flow maps.** Granules and magnetic network features are tracked with LCT to generate horizontal flow maps across the solar disk.
 2. **Cleaning.** These maps are corrected for known systematic effects.
 3. **Spectral decomposition.** The cleaned flow maps are Fourier-transformed in both time and longitude, producing a data cube indexed by latitude (θ), azimuthal order (*m*), and frequency (ω).
-4. **Mode search.** Inertial modes occupy a specific frequency band, the *inertial range* $[-2\Omega, 2\Omega]$, where $\Omega$ is the Sun's reference rotation rate. Within this cube, we search for power excesses at frequencies and azimuthal orders consistent with theoretical predictions.
+4. **Mode search.** Inertial modes occupy a specific frequency band, the *inertial range* $$[-2\Omega, 2\Omega]$$, where $$\Omega$$ is the Sun's reference rotation rate. Within this cube, we search for power excesses at frequencies and azimuthal orders consistent with theoretical predictions.
 
 Each candidate mode is characterised by its **azimuthal order** *m* (how many oscillation cycles wrap around the Sun in longitude) and its **frequency** ω (how fast the pattern rotates). Once a mode is identified, its **eigenfunction** — the spatial pattern of the associated velocity field across latitude and depth — can be extracted directly from the data.
 
