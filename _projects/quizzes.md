@@ -119,3 +119,10 @@ category: fun
 [Trivia Round](/assets/quiz_pdfs/07.07.2026/Duke's%20quiz%2007.07.2026%20Trivia.pdf){:target="_blank"}
 
 [Special Rounds](/assets/quiz_pdfs/07.07.2026/Duke's%20quiz%2007.07.2026%20Special.pdf){:target="_blank"}
+
+
+##### September 1, 2026
+
+[Trivia Round](/assets/quiz_pdfs/01.09.2026/Duke's%20quiz%2001.09.2026%20Trivia.pdf){:target="_blank"}
+
+[Special Rounds](/assets/quiz_pdfs/01.09.2026/Duke's%20quiz%2001.09.2026%20Special.pdf){:target="_blank"}
