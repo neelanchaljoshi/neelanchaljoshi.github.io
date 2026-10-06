@@ -2,28 +2,25 @@
 layout: about
 title: about
 permalink: /
-subtitle: <a href='https://www.mps.mpg.de/'>Max Planck Institute for Solar System Research</a>
+subtitle: Quantum Software Engineer at <a href='https://groovequantum.com/'>GROOVE Quantum</a>
 
 profile:
   align: right
   image: pic_goe.jpeg
   image_circular: false # crops the image to make it circular
-  address: >
-    <p>BT2.E2.100</p>
-    <p>Max Planck Institute for Solar System Research</p>
-    <p>Justus-von-Liebig-Weg 3</p>
-    <p>37077 Goettingen</p>
 
 news: false  # includes a list of news items
 selected_papers: false # includes a list of papers marked as "selected={true}"
 social: true  # includes social icons at the bottom of the page
 ---
 
-I am a physicist and engineer who recently completed my doctoral research at the Max Planck Institute for Solar System Research in Göttingen, Germany, where I studied large-scale flows inside the Sun using a technique called Local Correlation Tracking. My work sat at the intersection of observational solar physics, signal processing, and big data — I spent a lot of time building pipelines to extract weak physical signals from terabytes of solar imagery, and finding new ways to push the limits of what space instruments can measure. Part of my doctoral work also involved preparing for the ESA Vigil mission, a future space weather monitoring satellite, by characterising how well its instruments will be able to detect solar surface flows.
+I am a Quantum Software Engineer at [GROOVE Quantum](https://groovequantum.com/) in Delft, where I work on automated, high-volume characterisation and control of spin qubits. GROOVE builds germanium spin qubits on CMOS-compatible semiconductor processes, which changes what the software around them has to do: tuning up and benchmarking a qubit can no longer be a hand-crafted, one-device-at-a-time ritual. My job is to help make that process automated, repeatable and fast enough to keep pace with how many devices we can fabricate.
 
-Before Göttingen, I completed a Bachelor of Engineering in Electrical & Electronics Engineering and an MSc in Physics at [BITS Pilani](https://www.bits-pilani.ac.in/), India — a combination that has served me well for work that lives at the boundary between physics and engineering. During my masters I worked on generating solar magnetograms from historical data using deep learning, and on estimating stellar parameters from space telescope observations using Bayesian inference. During my time there, I also led the on-board computing subsystem for a student-built CubeSat under the ISRO Student Satellite Programme, where I implemented a compression algorithm on an FPGA and helped design the satellite's telemetry interfacing architecture.
+I came to quantum hardware from physics and engineering, by way of the Sun. I completed my doctorate at the [Max Planck Institute for Solar System Research](https://www.mps.mpg.de/) in Göttingen, measuring large-scale flows inside the Sun by tracking the motion of its surface granulation. In practice it was a measurement and signal-processing problem: pulling a weak, slow signal out of terabytes of solar imagery, building pipelines that could do it reliably and reproducibly, and — most usefully for what I do now — quantifying exactly how far a given instrument could be trusted. Part of that work was for the ESA Vigil space weather mission, where I characterised how well instruments that have not yet flown would be able to detect surface flows at all. Asking *what can this device actually resolve, and how do I prove it* turns out to be the same question whether the device is a telescope or a qubit.
 
-I grew up as an Army brat, moving every two years across India and never quite settling anywhere long enough to call it home. My nominal home base is Dehradun, a small city nestled on the foothills of the Himalayas — though after several years in Göttingen, the city of Gauss and Riemann might have an equally strong claim by now.
+My background sits deliberately on the boundary between physics and engineering: a Bachelor of Engineering in Electrical & Electronics Engineering alongside an MSc in Physics at [BITS Pilani](https://www.bits-pilani.ac.in/), India. Along the way I reconstructed solar magnetograms from historical data with deep learning, estimated stellar parameters from space telescope observations using Bayesian inference, and led the on-board computing subsystem for a student-built CubeSat under the ISRO Student Satellite Programme — implementing a compression algorithm on an FPGA and helping design the satellite's telemetry interfacing architecture. Hardware that has to work unattended, and software that has to be trusted to measure it, have been a running theme for a while now.
+
+I grew up as an Army brat, moving every two years across India and never quite settling anywhere long enough to call it home. My nominal home base is Dehradun, a small city nestled on the foothills of the Himalayas, though after several years in Göttingen the city of Gauss and Riemann has a fair claim too — and Delft is now making its case.
 
 When I am not busy scratching my head about science, you can find me playing some sport or the other, doing CrossFit, hosting quizzes, following F1 closely - probably too closely - or watching any movie/series I can get my hands on :)
 
