@@ -2,7 +2,7 @@
 layout: about
 title: about
 permalink: /
-subtitle: Quantum Software Engineer at <a href='https://groovequantum.com/'>GROOVE Quantum</a>
+subtitle: Quantum Software Engineer at <a href='https://groovequantum.com/'>Groove Quantum</a>
 
 profile:
   align: right
@@ -14,7 +14,7 @@ selected_papers: false # includes a list of papers marked as "selected={true}"
 social: true  # includes social icons at the bottom of the page
 ---
 
-I am a Quantum Software Engineer at [GROOVE Quantum](https://groovequantum.com/) in Delft, where I work on automated, high-volume characterisation and control of spin qubits. GROOVE builds germanium spin qubits on CMOS-compatible semiconductor processes, which changes what the software around them has to do: tuning up and benchmarking a qubit can no longer be a hand-crafted, one-device-at-a-time ritual. My job is to help make that process automated, repeatable and fast enough to keep pace with how many devices we can fabricate.
+I am a Quantum Software Engineer at [Groove Quantum](https://groovequantum.com/) in Delft, where I work on automated, high-volume characterisation and control of spin qubits. Groove builds germanium spin qubits on CMOS-compatible semiconductor processes, which changes what the software around them has to do: tuning up and benchmarking a qubit can no longer be a hand-crafted, one-device-at-a-time ritual. My job is to help make that process automated, repeatable and fast enough to keep pace with how many devices we can fabricate.
 
 I came to quantum hardware from physics and engineering, by way of the Sun. I completed my doctorate at the [Max Planck Institute for Solar System Research](https://www.mps.mpg.de/) in Göttingen, measuring large-scale flows inside the Sun by tracking the motion of its surface granulation. In practice it was a measurement and signal-processing problem: pulling a weak, slow signal out of terabytes of solar imagery, building pipelines that could do it reliably and reproducibly, and — most usefully for what I do now — quantifying exactly how far a given instrument could be trusted. Part of that work was for the ESA Vigil space weather mission, where I characterised how well instruments that have not yet flown would be able to detect surface flows at all. Asking *what can this device actually resolve, and how do I prove it* turns out to be the same question whether the device is a telescope or a qubit.
 
